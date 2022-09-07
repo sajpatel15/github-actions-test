@@ -24,7 +24,7 @@ jobs:
         uses: docker://node:12.14.1-alpine3.10
         with:
           entrypoint: ./script.sh
-          args: "Some string"
+          args: "Some_string"
       - name: send a slack message
         uses: docker://technosophos/slack-notify
         env:
