@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dump
-        runs: |
+        run: |
           echo ${{ contains( 'hello', 'll' ) }}
           echo ${{ startsWith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello', 'lo' ) }}
